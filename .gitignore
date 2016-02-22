@@ -1,0 +1,7 @@
+/.idea/
+/bin/
+/vendor/
+/test/coverage/
+!/test/coverage/.gitkeep
+/usage/build/
+!/usage/build/.gitkeep

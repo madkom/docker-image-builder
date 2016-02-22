@@ -1,0 +1,11 @@
+FROM registry.madkom.pl/debian:base
+# php
+{include:php[*phpVersion*]}
+# /php
+[*if phpVersion == "5"*]
+{include:nginx}
+[*/if*]
+# composer
+{add:php/composer:/usr/local/bin/composer}
+# /composer
+CMD ["/usr/bin/php", "-a"]

@@ -1,0 +1,6 @@
+FROM madkom.pl/php:5.6-cli
+RUN apt-get update -qq \
+    && apt-get install -yqq curl --no-install-recommends \
+    && apt-get autoclean \
+    && rm -rf /var/lib/apt/lists/*
+{add:nginx/nginx.conf:/etc/nginx/conf/nginx.conf}

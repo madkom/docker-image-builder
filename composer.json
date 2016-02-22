@@ -1,0 +1,36 @@
+{
+    "name": "madkom/docker-image-builder",
+    "type": "library",
+    "prefer-stable": true,
+    "license": "MIT",
+    "homepage": "http://madkom.pl/",
+    "authors": [
+        {
+            "name": "Darek Gafka",
+            "email": "d.gafka@madkom.pl"
+        }
+    ],
+    "keywords": [
+        "docker", "template", "creator", "builder", "automate", "build", "ci", "continues integration", "image"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Madkom\\Docker\\": "src"
+        }
+    },
+    "require": {
+        "symfony/expression-language": "^3.0.2"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^2.4.1",
+        "phpunit/phpunit": "^5.2.4",
+        "henrikbjorn/phpspec-code-coverage": "dev-master",
+        "phpunit/php-code-coverage": "^3.0",
+        "phpunit/phpcov": "^3.0.0",
+        "satooshi/php-coveralls": "dev-master",
+        "mikey179/vfsStream": "^1.6.2"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
