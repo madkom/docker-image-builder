@@ -1,5 +1,6 @@
 {
     "name": "madkom/docker-image-builder",
+    "description": "Library for creating docker images from templates.",
     "type": "library",
     "prefer-stable": true,
     "license": "MIT",
