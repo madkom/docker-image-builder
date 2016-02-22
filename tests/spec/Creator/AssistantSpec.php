@@ -3,6 +3,7 @@
 namespace spec\Madkom\Docker\Creator;
 
 use Madkom\Docker\Creator\Assistant;
+use Madkom\Docker\Creator\Builder\BuildException;
 use Madkom\Docker\Creator\Builder\Parser;
 use org\bovigo\vfs\vfsStream;
 use org\bovigo\vfs\vfsStreamDirectory;
@@ -46,6 +47,11 @@ docker push registry.com/php:7.1", $buildScript->getContent());
 
         $dockerfile = $this->root->getChild('docker/finished/test/Dockerfile');
         \PHPUnit_Framework_Assert::assertEquals(file_get_contents(__DIR__ . '/../../stubs/DockerfileWithAddReplaced'), $dockerfile->getContent());
+    }
+
+    function it_should_throw_build_exception_if_not_script_found()
+    {
+        $this->shouldThrow(BuildException::class)->during('createImage', [vfsStream::url('system/docker/build/buildscript.sh'),'test', vfsStream::url('system/docker/dockertemplates/DockerfileTemplateNotExisting'), 'registry.com/php:7.1']);
     }
 
     private function setUpStructure()

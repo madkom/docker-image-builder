@@ -2,6 +2,7 @@
 
 namespace Madkom\Docker\Creator;
 
+use Madkom\Docker\Creator\Builder\BuildException;
 use Madkom\Docker\Creator\Builder\DockerfileBuilder;
 use Madkom\Docker\Creator\Builder\DockerTemplate;
 use Madkom\Docker\Creator\Builder\ImageBuilder;
@@ -60,13 +61,19 @@ class Assistant
     }
 
     /**
-     * @param string $buildScriptPath Path to build script, if exists command will be appended
+     * @param string $buildScriptPath    Path to build script, if exists command will be appended
      * @param string $dockerTemplateName Name for your dockertemplate for example php-7.1
      * @param string $dockerTemplatePath Path to dockerfile template
      * @param string $tag                example: registry.com/php:7.1
+     *
+     * @throws BuildException
      */
     public function createImage($buildScriptPath, $dockerTemplateName, $dockerTemplatePath, $tag)
     {
+        if (!file_exists($dockerTemplatePath)) {
+            throw new BuildException('Template does not exists on given path ' . $dockerTemplatePath);
+        }
+
         $dockerTemplate = new DockerTemplate($dockerTemplateName, file_get_contents($dockerTemplatePath));
 
         $dockerTemplate = $this->dockerfileBuilder->buildFor($dockerTemplate);
