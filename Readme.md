@@ -1,5 +1,6 @@
 # Docker-Image-Builder
-    
+[![Build Status](https://travis-ci.org/madkom/docker-image-builder.svg?branch=master)](https://travis-ci.org/madkom/docker-image-builder)
+[![Coverage Status](https://coveralls.io/repos/github/madkom/docker-image-builder/badge.svg?branch=master)](https://coveralls.io/github/madkom/docker-image-builder?branch=master)
 
 Library for building docker images from templates. 
 
