@@ -100,8 +100,11 @@ class Assistant
     {
         if (!file_exists($buildScriptPath)) {
             file_put_contents($buildScriptPath, "#!/usr/bin/env bash");
+            file_put_contents($buildScriptPath, "\n" . $command, FILE_APPEND);
+            return;
         }
-        file_put_contents($buildScriptPath, "\n" . $command, FILE_APPEND);
+
+        file_put_contents($buildScriptPath, "\n&& " . $command, FILE_APPEND);
     }
 
 }

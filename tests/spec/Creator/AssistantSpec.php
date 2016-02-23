@@ -41,9 +41,10 @@ class AssistantSpec extends ObjectBehavior
         $this->createImage(vfsStream::url('system/docker/build/buildscript.sh'),'test', vfsStream::url('system/docker/dockertemplates/DockerfileTemplate'), 'registry.com/php:7.1', true, true);
 
         $buildScript = $this->root->getChild('docker/build/buildscript.sh');
+
         \PHPUnit_Framework_Assert::assertEquals("#!/usr/bin/env bash
 docker build --pull=true --tag=registry.com/php:7.1 vfs://system/docker/finished/test
-docker push registry.com/php:7.1", $buildScript->getContent());
+&& docker push registry.com/php:7.1", $buildScript->getContent());
 
         $dockerfile = $this->root->getChild('docker/finished/test/Dockerfile');
         \PHPUnit_Framework_Assert::assertEquals(file_get_contents(__DIR__ . '/../../stubs/DockerfileWithAddReplaced'), $dockerfile->getContent());
