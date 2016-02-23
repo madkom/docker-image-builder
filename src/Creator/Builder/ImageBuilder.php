@@ -15,11 +15,13 @@ class ImageBuilder
      * @param string $tag             tag of the image
      * @param string $targetDirectory In which catalog build should be run
      *
+     * @param bool   $doPull
+     *
      * @return string
      */
-    public function buildImage($tag, $targetDirectory)
+    public function buildImage($tag, $targetDirectory, $doPull = false)
     {
-        return "docker build --pull=true --tag=" . $tag . " " . $targetDirectory;
+        return "docker build" . ($doPull ? ' --pull=true' : '') . " --tag=" . $tag . " " . $targetDirectory;
     }
 
     /**

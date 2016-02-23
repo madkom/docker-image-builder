@@ -65,10 +65,11 @@ class Assistant
      * @param string $dockerTemplateName Name for your dockertemplate for example php-7.1
      * @param string $dockerTemplatePath Path to dockerfile template
      * @param string $tag                example: registry.com/php:7.1
+     * @param bool   $withPushToRegistry Push built images to registry
      *
      * @throws BuildException
      */
-    public function createImage($buildScriptPath, $dockerTemplateName, $dockerTemplatePath, $tag)
+    public function createImage($buildScriptPath, $dockerTemplateName, $dockerTemplatePath, $tag, $withPushToRegistry = false)
     {
         if (!file_exists($dockerTemplatePath)) {
             throw new BuildException('Template does not exists on given path ' . $dockerTemplatePath);
@@ -78,11 +79,14 @@ class Assistant
 
         $dockerTemplate = $this->dockerfileBuilder->buildFor($dockerTemplate);
         $dockerTemplate->toFile($this->destinationFolder . DIRECTORY_SEPARATOR . $dockerTemplate->name());
-        $commandBuild = $this->imageBuilder->buildImage($tag, $this->destinationFolder . DIRECTORY_SEPARATOR . $dockerTemplate->name());
-        $commandPush  = $this->imageBuilder->pushImage($tag);
 
+        $commandBuild = $this->imageBuilder->buildImage($tag, $this->destinationFolder . DIRECTORY_SEPARATOR . $dockerTemplate->name());
         $this->pushToBuildScript($buildScriptPath, $commandBuild);
-        $this->pushToBuildScript($buildScriptPath, $commandPush);
+
+        if ($withPushToRegistry) {
+            $commandPush  = $this->imageBuilder->pushImage($tag);
+            $this->pushToBuildScript($buildScriptPath, $commandPush);
+        }
     }
 
     /**

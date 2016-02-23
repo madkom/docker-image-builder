@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a946be1a7f4b745a06005d2e9927e2c7",
-    "content-hash": "8f06f07ae921ed5bdb09f3e231dd18df",
+    "hash": "b25c6d4211a0299286180b40521f4310",
+    "content-hash": "6add882daa089fd2d930e5029f81b49b",
     "packages": [
         {
             "name": "symfony/expression-language",
@@ -2228,7 +2228,7 @@
         "henrikbjorn/phpspec-code-coverage": 20,
         "satooshi/php-coveralls": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

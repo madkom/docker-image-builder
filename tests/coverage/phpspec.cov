@@ -6,134 +6,141 @@ $coverage->setData(array (
   ),
   '/home/dgafka/Praca/www/praca/projects/deployment/DockerImageBuilder/src/Creator/Builder/ImageBuilder.php' => 
   array (
-    22 => 
+    24 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\ImageBuilderSpec::it_should_build_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\ImageBuilderSpec::it_should_build_image',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\ImageBuilderSpec::it_should_build_image_with_pull',
     ),
-    23 => NULL,
-    34 => 
+    25 => NULL,
+    36 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
       1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\ImageBuilderSpec::it_should_push_image',
     ),
-    35 => NULL,
+    37 => NULL,
   ),
   '/home/dgafka/Praca/www/praca/projects/deployment/DockerImageBuilder/src/Creator/Builder/DockerTemplate.php' => 
   array (
     29 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_is_initializable',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_values_it_was_created_with',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_name',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_change_content',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      13 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      14 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      15 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
-      16 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      17 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      18 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
-      19 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      20 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
-      21 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
-      22 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_is_initializable',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_values_it_was_created_with',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_name',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_change_content',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      13 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      14 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      15 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      16 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      17 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      18 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      19 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      20 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      21 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      22 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
+      23 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
     ),
     30 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_is_initializable',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_values_it_was_created_with',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_name',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_change_content',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      13 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      14 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      15 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
-      16 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      17 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      18 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
-      19 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      20 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
-      21 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
-      22 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_is_initializable',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_values_it_was_created_with',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_name',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_change_content',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      13 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      14 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      15 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      16 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      17 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      18 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      19 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      20 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      21 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      22 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
+      23 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
     ),
     31 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_is_initializable',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_values_it_was_created_with',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_name',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_change_content',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      13 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      14 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      15 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
-      16 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      17 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      18 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
-      19 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      20 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
-      21 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
-      22 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_is_initializable',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_values_it_was_created_with',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_name',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_change_content',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      13 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      14 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      15 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      16 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      17 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      18 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      19 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      20 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      21 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      22 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
+      23 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
     ),
     38 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_name',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_name',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     39 => NULL,
     46 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_values_it_was_created_with',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_change_content',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
-      13 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      14 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      15 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
-      16 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      17 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
-      18 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
-      19 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_return_values_it_was_created_with',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_change_content',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      13 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      14 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      15 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      16 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      17 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      18 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      19 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
+      20 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
     ),
     47 => NULL,
     58 => 
@@ -144,29 +151,32 @@ $coverage->setData(array (
     71 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_replace_line',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
     ),
     72 => NULL,
     83 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
     ),
     85 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
     ),
     86 => 
     array (
@@ -179,9 +189,10 @@ $coverage->setData(array (
     89 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_throw_exception_if_target_folder_is_not_writable',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
     ),
     90 => 
     array (
@@ -191,14 +202,16 @@ $coverage->setData(array (
     93 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
     ),
     94 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_be_copied_to_file',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\DockerTemplateSpec::it_should_create_catalog_if_not_exists',
     ),
   ),
   '/home/dgafka/Praca/www/praca/projects/deployment/DockerImageBuilder/src/Creator/Builder/Parser/IncludesParser.php' => 
@@ -207,49 +220,54 @@ $coverage->setData(array (
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_is_initializable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_return_priority',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_is_initializable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_return_priority',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
     ),
     29 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_is_initializable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_return_priority',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_is_initializable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_return_priority',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
     ),
     36 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_return_priority',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_return_priority',
     ),
     37 => NULL,
     44 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
     ),
     46 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_file_not_found',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
     ),
     47 => 
     array (
@@ -278,8 +296,9 @@ $coverage->setData(array (
     53 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_include_statement',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\IncludesParserSpec::it_should_parse_multiple_include_statements',
     ),
     54 => NULL,
     64 => 
@@ -318,32 +337,37 @@ $coverage->setData(array (
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     24 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     25 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     26 => NULL,
     27 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     28 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     29 => NULL,
     31 => 
@@ -354,29 +378,35 @@ $coverage->setData(array (
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     33 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     44 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
     45 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
     46 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
     48 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
     49 => NULL,
   ),
@@ -386,83 +416,92 @@ $coverage->setData(array (
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_is_initializable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_return_priority',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_is_initializable',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_should_return_0_priority',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_is_initializable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_return_priority',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_is_initializable',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_should_return_0_priority',
     ),
     35 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_is_initializable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_return_priority',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_is_initializable',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_should_return_0_priority',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_is_initializable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_return_priority',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_is_initializable',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_should_return_0_priority',
     ),
     36 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_is_initializable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_return_priority',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_is_initializable',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_should_return_0_priority',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_is_initializable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_return_priority',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_is_initializable',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_should_return_0_priority',
     ),
     43 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_return_priority',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_return_priority',
     ),
     44 => NULL,
     51 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
     ),
     52 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
     ),
     54 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
     ),
     55 => NULL,
     66 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
     ),
     68 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
     ),
     69 => 
     array (
@@ -480,24 +519,27 @@ $coverage->setData(array (
     74 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
     ),
     75 => NULL,
     86 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
     ),
     88 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_throw_exception_if_wrong_expression_passed',
     ),
     89 => 
     array (
@@ -518,8 +560,9 @@ $coverage->setData(array (
     93 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_expression',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\ExpressionParserSpec::it_should_parse_if_statement',
     ),
     94 => NULL,
     107 => 
@@ -551,55 +594,64 @@ $coverage->setData(array (
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     44 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     45 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     46 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     47 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     48 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     49 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     50 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     51 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
     60 => 
     array (
@@ -609,67 +661,88 @@ $coverage->setData(array (
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
     ),
-    73 => 
+    74 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
-    74 => 
+    75 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
     ),
-    75 => NULL,
-    77 => 
+    76 => NULL,
+    78 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-    ),
-    79 => 
-    array (
-      0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
     80 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
     81 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
-    82 => 
+    83 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
     84 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-    ),
-    85 => 
-    array (
-      0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
     86 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
-    96 => 
+    87 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
     ),
-    97 => 
+    88 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
     ),
-    98 => 
+    89 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
     ),
-    99 => 
+    90 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
     100 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+    ),
+    101 => 
+    array (
+      0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+    ),
+    102 => 
+    array (
+      0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+    ),
+    103 => 
+    array (
+      0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+    ),
+    104 => 
+    array (
+      0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
     ),
   ),
   '/home/dgafka/Praca/www/praca/projects/deployment/DockerImageBuilder/src/Creator/Builder/Parser/DockerAddParser.php' => 
@@ -678,156 +751,171 @@ $coverage->setData(array (
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_is_initializable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_return_priority',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_is_initializable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_return_priority',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     36 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_is_initializable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_return_priority',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_is_initializable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_return_priority',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     37 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_is_initializable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_return_priority',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_is_initializable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_return_priority',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      9 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      10 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      11 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      12 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     44 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_return_priority',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_return_priority',
     ),
     45 => NULL,
     52 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     54 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     55 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     57 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     58 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     60 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
     61 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
     62 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
     63 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
     65 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
     66 => NULL,
     78 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_file_not_found',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      8 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     79 => 
     array (
@@ -837,12 +925,13 @@ $coverage->setData(array (
     82 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_not_read_permissions_for_file',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      7 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     83 => 
     array (
@@ -852,20 +941,22 @@ $coverage->setData(array (
     86 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     87 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
-      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
-      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_partials_folder_is_not_writable',
+      5 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      6 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_throw_exception_if_folder_does_not_and_cant_be_created',
     ),
     88 => 
     array (
@@ -876,16 +967,18 @@ $coverage->setData(array (
     90 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
     92 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
     93 => 
     array (
@@ -894,16 +987,18 @@ $coverage->setData(array (
     96 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
     97 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
     98 => 
     array (
@@ -912,9 +1007,10 @@ $coverage->setData(array (
     100 => 
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      1 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
-      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
+      1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      2 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_for_include_tags',
+      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_parse_mulitple_include_tags',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\DockerAddParserSpec::it_should_create_target_folders_if_not_existing',
     ),
   ),
   '/home/dgafka/Praca/www/praca/projects/deployment/DockerImageBuilder/src/Creator/Builder/Parser/PreExpressionParser.php' => 
@@ -923,8 +1019,9 @@ $coverage->setData(array (
     array (
       0 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_register_parser',
       1 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image',
-      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
-      3 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_should_return_0_priority',
+      2 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry',
+      3 => 'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_throw_build_exception_if_not_script_found',
+      4 => 'spec\\Madkom\\Docker\\Creator\\Builder\\Parser\\PreExpressionParserSpec::it_should_return_0_priority',
     ),
     18 => NULL,
   ),
@@ -939,6 +1036,11 @@ $coverage->setTests(array (
     'status' => NULL,
   ),
   'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_create_prepared_image' => 
+  array (
+    'size' => 'unknown',
+    'status' => NULL,
+  ),
+  'spec\\Madkom\\Docker\\Creator\\AssistantSpec::it_should_prepare_image_without_pushing_to_registry' => 
   array (
     'size' => 'unknown',
     'status' => NULL,
@@ -999,6 +1101,11 @@ $coverage->setTests(array (
     'status' => NULL,
   ),
   'spec\\Madkom\\Docker\\Creator\\Builder\\ImageBuilderSpec::it_should_build_image' => 
+  array (
+    'size' => 'unknown',
+    'status' => NULL,
+  ),
+  'spec\\Madkom\\Docker\\Creator\\Builder\\ImageBuilderSpec::it_should_build_image_with_pull' => 
   array (
     'size' => 'unknown',
     'status' => NULL,

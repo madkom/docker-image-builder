@@ -24,7 +24,15 @@ class ImageBuilderSpec extends ObjectBehavior
         $tag = 'nginx:1.9.1';
         $targetDirectory = '/system/home';
 
-        $this->buildImage($tag, $targetDirectory)->shouldReturn("docker build --pull=true --tag=nginx:1.9.1 /system/home");
+        $this->buildImage($tag, $targetDirectory)->shouldReturn("docker build --tag=nginx:1.9.1 /system/home");
+    }
+
+    function it_should_build_image_with_pull()
+    {
+        $tag = 'nginx:1.9.1';
+        $targetDirectory = '/system/home';
+
+        $this->buildImage($tag, $targetDirectory, true)->shouldReturn("docker build --pull=true --tag=nginx:1.9.1 /system/home");
     }
 
     function it_should_push_image()
