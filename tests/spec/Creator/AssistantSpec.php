@@ -38,13 +38,12 @@ class AssistantSpec extends ObjectBehavior
 
     function it_should_create_prepared_image()
     {
-        $this->createImage(vfsStream::url('system/docker/build/buildscript.sh'),'test', vfsStream::url('system/docker/dockertemplates/DockerfileTemplate'), 'registry.com/php:7.1', true, true);
+        $this->createImage(vfsStream::url('system/docker/build/buildscript.sh'),'test', vfsStream::url('system/docker/dockertemplates/DockerfileTemplate'), 'registry.com/php:7.1', true);
 
         $buildScript = $this->root->getChild('docker/build/buildscript.sh');
 
         \PHPUnit_Framework_Assert::assertEquals("#!/usr/bin/env bash
-docker build --pull=true --tag=registry.com/php:7.1 vfs://system/docker/finished/test \\
-&& docker push registry.com/php:7.1", $buildScript->getContent());
+docker build --pull=true --tag=registry.com/php:7.1 vfs://system/docker/finished/test", $buildScript->getContent());
 
         $dockerfile = $this->root->getChild('docker/finished/test/Dockerfile');
         \PHPUnit_Framework_Assert::assertEquals(file_get_contents(__DIR__ . '/../../stubs/DockerfileWithAddReplaced'), $dockerfile->getContent());
@@ -60,6 +59,26 @@ docker build --tag=registry.com/php:7.1 vfs://system/docker/finished/test", $bui
 
         $dockerfile = $this->root->getChild('docker/finished/test/Dockerfile');
         \PHPUnit_Framework_Assert::assertEquals(file_get_contents(__DIR__ . '/../../stubs/DockerfileWithAddReplaced'), $dockerfile->getContent());
+    }
+
+    function it_should_push_to_registry()
+    {
+        $this->pushImage(vfsStream::url('system/docker/build/buildscript.sh'), 'registry/library/ubuntu:14.04');
+
+        $buildScript = $this->root->getChild('docker/build/buildscript.sh');
+        \PHPUnit_Framework_Assert::assertEquals("#!/usr/bin/env bash
+docker push registry/library/ubuntu:14.04", $buildScript->getContent());
+    }
+
+    function it_should_do_multiple_to_registry()
+    {
+        $this->pushImage(vfsStream::url('system/docker/build/buildscript.sh'), 'registry/library/ubuntu:14.04');
+        $this->pushImage(vfsStream::url('system/docker/build/buildscript.sh'), 'registry/library/ubuntu:15.04');
+
+        $buildScript = $this->root->getChild('docker/build/buildscript.sh');
+        \PHPUnit_Framework_Assert::assertEquals("#!/usr/bin/env bash
+docker push registry/library/ubuntu:14.04 \\
+&& docker push registry/library/ubuntu:15.04", $buildScript->getContent());
     }
 
     function it_should_throw_build_exception_if_not_script_found()

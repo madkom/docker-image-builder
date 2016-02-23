@@ -61,16 +61,17 @@ class Assistant
     }
 
     /**
+     * Creates create image command and prepares Dockerfile for building
+     *
      * @param string $buildScriptPath    Path to build script, if exists command will be appended
      * @param string $dockerTemplateName Name for your dockertemplate for example php-7.1
      * @param string $dockerTemplatePath Path to dockerfile template
      * @param string $tag                example: registry.com/php:7.1
      * @param bool   $doPullForNewestImage Should build make pull for newest image before building
-     * @param bool   $withPushToRegistry Push built images to registry
      *
      * @throws BuildException
      */
-    public function createImage($buildScriptPath, $dockerTemplateName, $dockerTemplatePath, $tag, $doPullForNewestImage = false, $withPushToRegistry = false)
+    public function createImage($buildScriptPath, $dockerTemplateName, $dockerTemplatePath, $tag, $doPullForNewestImage = false)
     {
         if (!file_exists($dockerTemplatePath)) {
             throw new BuildException('Template does not exists on given path ' . $dockerTemplatePath);
@@ -83,11 +84,18 @@ class Assistant
 
         $commandBuild = $this->imageBuilder->buildImage($tag, $this->destinationFolder . DIRECTORY_SEPARATOR . $dockerTemplate->name(), $doPullForNewestImage);
         $this->pushToBuildScript($buildScriptPath, $commandBuild);
+    }
 
-        if ($withPushToRegistry) {
-            $commandPush  = $this->imageBuilder->pushImage($tag);
-            $this->pushToBuildScript($buildScriptPath, $commandPush);
-        }
+    /**
+     * Creates push image command
+     *
+     * @param string $buildScriptPath Path to build script, if exists command will be appended
+     * @param string $tag example: registry.com/php:7.1
+     */
+    public function pushImage($buildScriptPath, $tag)
+    {
+        $commandPush  = $this->imageBuilder->pushImage($tag);
+        $this->pushToBuildScript($buildScriptPath, $commandPush);
     }
 
     /**
