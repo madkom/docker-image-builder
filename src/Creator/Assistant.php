@@ -104,7 +104,7 @@ class Assistant
             return;
         }
 
-        file_put_contents($buildScriptPath, "\n&& " . $command, FILE_APPEND);
+        file_put_contents($buildScriptPath, " \\\n&& " . $command, FILE_APPEND);
     }
 
 }

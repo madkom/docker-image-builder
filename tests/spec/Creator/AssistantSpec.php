@@ -43,7 +43,7 @@ class AssistantSpec extends ObjectBehavior
         $buildScript = $this->root->getChild('docker/build/buildscript.sh');
 
         \PHPUnit_Framework_Assert::assertEquals("#!/usr/bin/env bash
-docker build --pull=true --tag=registry.com/php:7.1 vfs://system/docker/finished/test
+docker build --pull=true --tag=registry.com/php:7.1 vfs://system/docker/finished/test \\
 && docker push registry.com/php:7.1", $buildScript->getContent());
 
         $dockerfile = $this->root->getChild('docker/finished/test/Dockerfile');
