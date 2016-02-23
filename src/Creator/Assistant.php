@@ -65,11 +65,12 @@ class Assistant
      * @param string $dockerTemplateName Name for your dockertemplate for example php-7.1
      * @param string $dockerTemplatePath Path to dockerfile template
      * @param string $tag                example: registry.com/php:7.1
+     * @param bool   $doPullForNewestImage Should build make pull for newest image before building
      * @param bool   $withPushToRegistry Push built images to registry
      *
      * @throws BuildException
      */
-    public function createImage($buildScriptPath, $dockerTemplateName, $dockerTemplatePath, $tag, $withPushToRegistry = false)
+    public function createImage($buildScriptPath, $dockerTemplateName, $dockerTemplatePath, $tag, $doPullForNewestImage = false, $withPushToRegistry = false)
     {
         if (!file_exists($dockerTemplatePath)) {
             throw new BuildException('Template does not exists on given path ' . $dockerTemplatePath);
@@ -80,7 +81,7 @@ class Assistant
         $dockerTemplate = $this->dockerfileBuilder->buildFor($dockerTemplate);
         $dockerTemplate->toFile($this->destinationFolder . DIRECTORY_SEPARATOR . $dockerTemplate->name());
 
-        $commandBuild = $this->imageBuilder->buildImage($tag, $this->destinationFolder . DIRECTORY_SEPARATOR . $dockerTemplate->name());
+        $commandBuild = $this->imageBuilder->buildImage($tag, $this->destinationFolder . DIRECTORY_SEPARATOR . $dockerTemplate->name(), $doPullForNewestImage);
         $this->pushToBuildScript($buildScriptPath, $commandBuild);
 
         if ($withPushToRegistry) {
