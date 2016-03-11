@@ -23,6 +23,7 @@ class ExpressionParserSpec extends ObjectBehavior
     {
         $expressionLanguage = new ExpressionLanguage();
         $data = [
+            'imageName'  => 'registry.com.pl',
             'phpVersion' => '5.6',
             'tag'        => 'cli'
         ];

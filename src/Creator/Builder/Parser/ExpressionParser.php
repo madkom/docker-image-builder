@@ -83,7 +83,7 @@ class ExpressionParser implements Parser
      */
     private function parseExpressions(DockerTemplate $dockerTemplate)
     {
-        preg_match_all("#\[\*([^if|^\/if][^\*]*)\*\]#i", $dockerTemplate->content(), $matches);
+        preg_match_all("#\[\*((?!if|\/if)[^\*]+)\*\]#i", $dockerTemplate->content(), $matches);
 
         for ($i = 0; $i < count($matches[0]); $i++) {
             $evaluatedExpression = $this->evaluate($matches[1][$i]);
